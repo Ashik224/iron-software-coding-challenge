@@ -4,7 +4,9 @@
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            OldPhonePadTextConversion oldPhonePadTextConversion = new();
+            string output = oldPhonePadTextConversion.OldPhonePad("8 88777444666*664#");
+            Console.WriteLine("Final string: " +output);
         }
     }
 }

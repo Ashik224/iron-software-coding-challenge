@@ -11,7 +11,7 @@ namespace PhonePadTextConversionApp
             string finalOutput = "";
             input = input.Trim();
 
-            for (int i = 0; i < input.Length-1; i++)
+            for (int i = 0; i < input.Length; i++)
             {
                 if (input[i] == ' ') continue;
                 if(input[i] == '*')

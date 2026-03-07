@@ -16,6 +16,17 @@ namespace PhonePadTextConversionApp.Tests
         }
 
         [Fact]
+        public void OldPhoneTextConverter_EmptyInput_ReturnsEmptyOutput()
+        {
+            var textConverter = new OldPhonePadTextConversion();
+            string input = "#";
+
+            string output = textConverter.OldPhoneTextConverter(input);
+
+            Assert.Equal(String.Empty, output);
+        }
+
+        [Fact]
         public void OldPhoneTextConverter_DeleteOnEmptyInput_ReturnsEmptyOutput()
         {
             var textConverter = new OldPhonePadTextConversion();

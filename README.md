@@ -33,6 +33,9 @@ To solve this, the program traverses the input string. While going through each 
 3. Case: Check cyclic effect <br> Behavior: Should return the expected output
 4. Case: Delete inputs more than available <br> Behavior: Should return empty output
 5. Case: Press the same digit after a pause <br> Behavior: Should return separate letters as output
+6. Case: Press the four alphabet digits <br> Behavior: Should return the expected output
+7. Case: Press different digits after a pause <br> Behavior: Should return the expected output
+8. Case: Press the last two digits <br> Behavior: Should return the expected output
 
 # How to Run
 1. Clone the repository

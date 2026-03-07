@@ -6,8 +6,7 @@ namespace IronSoftwareCodingChallenge
     {
         private static void Main(string[] args)
         {
-            OldPhonePadTextConversion oldPhonePadTextConversion = new();
-            string output = oldPhonePadTextConversion.OldPhoneTextConverter("8 88777444666*664#");
+            string output = OldPhonePadTextConversion.OldPhoneTextConverter("8 88777444666*664#");
             Console.WriteLine("Final string: " +output);
         }
     }

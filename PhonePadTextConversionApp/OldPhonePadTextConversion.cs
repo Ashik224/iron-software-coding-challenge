@@ -6,7 +6,7 @@ namespace PhonePadTextConversionApp
 {
     public class OldPhonePadTextConversion
     {
-        public String OldPhoneTextConverter(string input)
+        public static String OldPhoneTextConverter(string input)
         {
             string finalOutput = "";
             input = input.Trim();

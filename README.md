@@ -16,6 +16,7 @@ To solve this, the program traverses the input string. While going through each 
 # Assumptions
 1. The input always ends with '#'.
 2. The input only contains keypad digits that are explicitly mentioned in the problem statement.
+3. The input only gets converted to uppercase letters.
 
 # Edge Cases
 1. Case: Empty input <br>Behavior: Should return empty output

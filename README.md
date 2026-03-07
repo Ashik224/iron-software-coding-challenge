@@ -25,5 +25,10 @@ To solve this, the program traverses the input string. While going through each 
 4. Case: Delete inputs more than available <br> Behavior: Should return empty output
 5. Case: Press the same digit after a pause <br> Behavior: Should return separate letters as output
 
-
+# How to Run
+1. Clone the repository
+2. Navigate to the solution directory
+3. Restore dependencies: `dotnet restore`
+4. Run the application: `dotnet run --project PhonePadTextConversionApp`
+5. Run unit tests: `dotnet test`
 

@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="PhonePadTextConversionApp.Tests/PhonePadTextConversionApp.Tests.csproj" Id="9da5d456-e6f9-41f6-9803-dbb29ea43ecd" />
+  <Project Path="PhonePadTextConversionApp/PhonePadTextConversionApp.csproj" />
+</Solution>

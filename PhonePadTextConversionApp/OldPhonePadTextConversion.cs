@@ -6,15 +6,14 @@ namespace PhonePadTextConversionApp
 {
     public class OldPhonePadTextConversion
     {
-        public String OldPhonePad(string input)
+        public String OldPhoneTextConverter(string input)
         {
             string finalOutput = "";
             input = input.Trim();
-            if (input[input.Length - 1] != '#') return "No # symbol found at the end of the text!";
 
             for (int i = 0; i < input.Length-1; i++)
             {
-                if (input[i] == ' ' || input[i] == '1') continue;
+                if (input[i] == ' ') continue;
                 if(input[i] == '*')
                 {
                     if(finalOutput.Length > 0)

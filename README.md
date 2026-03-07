@@ -1,3 +1,12 @@
+## Table of Contents
+
+- [Problem Description](#problem-description)
+- [Solution Approach](#solution-approach)
+- [Assumptions](#assumptions)
+- [Edge Cases](#edge-cases)
+- [Unit Tests](#unit-tests)
+- [How to Run](#how-to-run)
+
 # Problem Description
 This problem involves an old keypad phone with alphabetical letters, a backspace, and a send button. Each button has a number to identify it, and pressing a button multiple times cycles through the letters on it, 
 allowing each button to represent more than one letter. To enter two characters from the same button, the user must pause for a second. The '*' character deletes one letter. The input always ends with '#'. The goal is to convert this old phone keypad input into text.

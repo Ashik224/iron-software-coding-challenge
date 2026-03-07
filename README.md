@@ -4,7 +4,6 @@
 - [Solution Approach](#solution-approach)
 - [Assumptions](#assumptions)
 - [Edge Cases](#edge-cases)
-- [Unit Tests](#unit-tests)
 - [How to Run](#how-to-run)
 
 # Problem Description

@@ -6,67 +6,46 @@ namespace IronSoftwareCodingChallenge
 {
     internal class OldPhonePadTextConversion
     {
-        private Dictionary<string, string> buttonTextPairs = new()
-        {
-            { "2", "A" },
-            { "22", "B" },
-            { "222", "C" },
-            { "3", "D" },
-            { "33", "E" },
-            { "333", "F" },
-            { "4", "G" },
-            { "44", "H" },
-            { "444", "I" },
-            { "5", "J" },
-            { "55", "K" },
-            { "555", "L" },
-            { "6", "M" },
-            { "66", "N" },
-            { "666", "O" },
-            { "7", "P" },
-            { "77", "Q" },
-            { "777", "R" },
-            { "7777", "S" },
-            { "8", "T" },
-            { "88", "U" },
-            { "888", "V" },
-            { "9", "W" },
-            { "99", "X" },
-            { "999", "Y" },
-            { "9999", "Z"   },
-        };
-
         public String OldPhonePad(string input)
         {
             string finalOutput = "";
             input = input.Trim();
             for(int i = 0; i < input.Length; i++)
             {
-                if (input[i] == '*')
+                if (input[i] == ' ' || input[i] == '1') continue;
+                if(input[i] == '*')
                 {
-                    if(!string.IsNullOrEmpty(finalOutput)) 
-                        finalOutput = finalOutput.Substring(0, finalOutput.Length - 1);
+                    if(finalOutput.Length > 0)
+                        finalOutput = finalOutput.Remove(finalOutput.Length - 1);
                     continue;
                 }
-
-                if(input[i] == ' ') continue;
-
                 if (input[i] == '#') break;
 
                 int count = 0;
                 while (input[i] == input[i+1])
                 {
                     count++;
-                    i++;
+                    i++;              
                 }
-
-                string recurringChar = "";
-                for(int j = 0; j < count + 1; j++)
+                count += 1;
+                int rem;
+                if (input[i] == '7' || input[i] == '9')
                 {
-                    recurringChar += input[i];
+                    rem = count % 4;
+                    if (rem == 0) rem = 4;
+                }
+                else
+                {
+                    rem = count % 3;
+                    if (rem == 0) rem = 3;
                 }
 
-                finalOutput += buttonTextPairs[recurringChar];
+                int digit = input[i] - '0';
+                char alphabet = (char) (64 + ((digit - 2) * 3) + rem);
+                if(digit == 8 || digit == 9)
+                    alphabet += (char) 1;
+
+                finalOutput += alphabet;
             }
                 return finalOutput;
         }

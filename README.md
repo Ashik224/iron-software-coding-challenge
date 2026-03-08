@@ -1,5 +1,5 @@
 # AI Prompt
-The AI prompt that could be used to solve this problem can be found here: [AI Prompt](AI_Prompt.md)
+The AI prompt that could be used to solve this problem can be found here: [AI Prompt](AI_prompt.md)
 
 # Problem Description
 This problem involves an old keypad phone with alphabetical letters, a backspace, and a send button. Each button has a number to identify it, and pressing a button multiple times cycles through the letters on it, 
